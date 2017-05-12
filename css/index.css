@@ -1,0 +1,104 @@
+html,
+body,
+div,
+img,
+a {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.prev-con {
+	height: 100px;
+}
+.move {
+	width: 540px;
+	font-size: 12px;
+}
+.move .sort-type {
+	height: 28px;
+	line-height: 28px;
+}
+.move .sort-type span {
+	padding: 1px 4px 2px;
+}
+.move .sort-type .title {
+	color: #999;
+}
+.move .sort-type .tag {
+	color: #0000cc;
+	margin: 0 4px;
+	cursor: pointer;
+}
+.move .sort-type .tag:hover {
+	text-decoration: underline;
+}
+.move .sort-type .tag.selected {
+	color: #fff;
+	background-color: #388bff;
+}
+
+.move  .sort-key {
+	height: 28px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+	background-color: #eee;
+}
+.move .sort-key .sort-item {
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 15px;
+	border-style: solid;
+	border-width: 2px 1px 1px;
+	border-color: transparent;
+	margin-bottom: -1px;
+}
+.move .sort-key .sort-item.selected {
+	border-color: #388bff #ccc #fff;
+}
+
+.content {
+	margin-top: 20px;
+	width: 550px;
+	height: 450px;
+}
+.content .move-item{
+	float: left;
+	width: 120px;
+	margin-right: 20px;
+}
+.content .move-item img {
+	width: 100%;
+}
+.content .move-item:nth-child(4n){
+	margin-right: 0;
+}
+.content .move-item p {
+	white-space: nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.page {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.page .page-num {
+	padding: 3px 6px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.page .page-num:hover {
+	border-color: #666;
+}
+.page .page-num.selected {
+	border-color: #fff;
+}
